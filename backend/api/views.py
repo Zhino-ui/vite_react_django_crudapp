@@ -8,6 +8,8 @@ from .models import *
 # Create your views here.
 # def home(request):
 #     return HttpResponse('This is the homepage')
+def index(request):
+    return render(request, 'index.html')
 
 class ProjectManagerViewset(viewsets.ViewSet):
     permission_classes = [permissions.AllowAny]
