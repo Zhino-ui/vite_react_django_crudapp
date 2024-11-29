@@ -1,0 +1,3 @@
+web: gunicorn crud.wsgi:application
+
+frontend: npm run start
